@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pour toi ❤️</title>
+<style>
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f0;
+    margin-top: 100px;
+}
+h1 {
+    color: #ff3366;
+    font-size: 40px;
+}
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+#yes {
+    background-color: #ff4d88;
+    color: white;
+}
+#no {
+    background-color: gray;
+    color: white;
+    position: absolute;
+}
+</style>
+</head>
+<body>
+
+<h1>💕 Veux-tu être ma Valentine ? 💕</h1>
+
+<button id="yes" onclick="alert('Je t’aime mon amour ❤️')">Oui 💖</button>
+<button id="no">Non 😅</button>
+
+<script>
+let noBtn = document.getElementById("no");
+noBtn.addEventListener("mouseover", function() {
+    noBtn.style.left = Math.random() * window.innerWidth + "px";
+    noBtn.style.top = Math.random() * window.innerHeight + "px";
+});
+</script>
+
+</body>
+</html>
